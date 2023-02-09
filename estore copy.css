@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+}
+.nav{
+    background-color: aliceblue;
+}
+.main{
+    /* height: 20vh; */
+    width: 100%;
+    background-color: rgb(218, 231, 228);
+    display:flex ;
+    justify-content: space-between;
+
+}
+.m1{
+    width: 14%;
+    height: 20vh;
+background-image: url("vivo.jpeg");
+background-size: cover;
+    
+}
+.m2{
+    /* width: 14%;
+    height: 20vh; */
+    text-align: center;
+    color: black;
+}
+.m12{
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items:center ;
+    justify-content: space-around;
+    font-size: 140%;
+    
+
+}
+.m12 a{
+    text-decoration: none;
+    color: black;
+}
+i{
+    color: black;
+}
+.m2:hover{
+    color: brown;
+    text-shadow: 0 2px 2px blueviolet;
+}
+.rt{
+    position: absolute;
+    right:10px;
+    top:50%;
+    color:red;
+   }
+   .con{
+    position: relative;
+    width:300px;
+    height:300px;
+    margin-left: 50px;
+
+   }
+   .lt{
+    position: relative;
+    top:50%;
+    left:10px;
+    color:red;
+   }
+   .dotcon{
+    position: absolute;
+    width:100%;
+    bottom: -260px;
+    left: 450px;
+    justify-content: center;
+    display: flex;
+   }
+   .dotcon div{
+    padding: 3px;
+   }
+   .fa-solid{
+    color:coral;
+   }
+   .fa-regular{
+    color:darkgoldenrod;
+   }
+   .sub1{
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    width: 100%;
+
+   }
+   .s1{
+    background-color: blue;
+    width: 40%;
+    margin: 50%;
+   }
+   .s2{
+    background-color: brown;
+    width: 40%;
+   }
+   .s2 img{
+    height: 10vh;
+    width: 5%;
+   }

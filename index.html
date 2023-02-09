@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+    <div class="nav">
+    <div class="main">
+       <div id="m1">
+        <a href="cha.html">
+          <div class="m1">
+          </div>
+         </a>
+       </div>
+        <div class="m12">
+            <div class="m2">
+                home
+             </div>
+             <div class="m2">
+               <a href="products.html"> products</a>
+             </div>
+             <div class="m2">
+                <a href="estore.html">E-store</a>
+             </div>
+             <div class="m2">
+                <a href="vivostore.html">vivo exclusive store</a>   
+             </div>
+             <div class="m2">
+                <a href="cummunity.html">cummunity</a>
+             </div>
+             <div class="m2">
+              <a href="sign.html">SignIn</a>
+             </div>
+             <!-- <div class="m2">
+                function os
+             </div> -->
+             <div class="m2">
+             <i class="fa-solid fa-address-book"></i>
+             <div class="cart">
+              <div class="cart1"><i class="fa-solid fa-person"></i> 
+                <a href="sign.html">my Oders</a></div>
+              <div class="cart1"><i class="fa-solid fa-cart-plus"></i> 
+                <a href="sign.html"> Cart</a></div>
+              <div class="cart1"><i class="fa-solid fa-user"></i>
+                <a href="sign.html">Register</a></div>
+             </div>
+            </div>
+            <div class="m2">
+                <i onclick="fun()" id="navbar" class="fa-solid fa-magnifying-glass"></i>
+                <div id="hello">
+                  <div class="er1">
+                    <div class="e1"><b>VIVO</b></div>
+                    <input class="e2" type="search" placeholder="search">
+                    <div class="e3"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                    <div class="er2"><b>Every one is searching</b></div>
+                    <div class="er3"><b>Y91i</b></div>
+                    <div class="er3"><b>Y17</b></div>
+                    <div class="er3"><b>V15</b></div>
+                    <div class="er3"><b>V15pro</b></div>
+                    
+                  </div>
+                </div>
+
+            </div>
+          <!-- <div class="vivo1">
+            <div class="right">
+                <div class="left">
+
+                </div>
+            </div>
+        </div> -->
+             
+        </div>
+        <!-- <div class="vivo1">
+            <div class="right">
+                <div class="left">
+
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="submain">
+     <div class="left">
+        <div class="left1">
+            v25 series 
+        </div>
+        <div class="left2">
+            delight every moment
+        </div>
+        <div class="left3">
+            Buy now
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+    </div>
+    
+   </div>
+   <div class="sub">
+    <video autoplay loop muted plays-inline width="1250" height="500" controls>
+        <source src="video1.mp4" type="video/mp4">
+      </video>
+      
+   </div>
+   <div class="submain2">
+    <img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1675150970054/095243a3d279ea59551b1ad149ffc2ce.jpg">
+    <div class="k3">vivoice<br>ready your voices</br>Get set to connect<br>Go register for change!</div>
+    <div class="k4">live now
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </div>
+    <!-- <div class="left4">
+
+    </div> -->
+   </div>
+   <div class="con">
+    <!-- <div class="lt" onclick="fun1()"><i class="fa-solid fa-less-than"></i></div> -->
+     <img id="i1" src="1.jpg" width="1050px" height="600px"/>
+    <!-- <div class="rt" onclick="fun()"><i class="fa-solid fa-greater-than"></i></div> -->
+  <div class="dotcon">
+    <div onclick="fun2(0,this)"><i class="fa-solid fa-circle"></i></div>
+    <div onclick="fun2(1,this)"><i class="fa-regular fa-circle"></i></div>
+    <div onclick="fun2(2,this)"><i class="fa-regular fa-circle"></i></div>
+    <div onclick="fun2(3,this)"><i class="fa-regular fa-circle"></i></div>
+    <div onclick="fun2(4,this)"><i class="fa-regular fa-circle"></i></div>
+  </div>  
+  </div>   
+  
+     
+       <script>
+       var i=0
+       var arr=["js1.webp","js2.webp","js3.webp","js4.webp","js5.webp"]
+    function fun(){
+      let re=document.getElementsByClassName("fa-circle")
+      re[i].className="fa-regular fa-circle"
+     i++
+      
+        if(i>=arr.length){
+          i=0
+        }
+       
+        console.log(i)
+        document.getElementById("i1").src=arr[i]
+        re[i].className="fa-solid fa-circle"
+  
+      }
+      function fun1()
+      {
+        let re=document.getElementsByClassName("fa-circle")
+      re[i].className="fa-regular fa-circle"
+  i--;
+  if(i==-1)
+  {
+    i=arr.length-1
+  }
+  console.log(i)
+  document.getElementById("i1").src=arr[i]
+  re[i].className="fa-solid fa-circle"
+      }
+  
+     
+   function fun2(ind,e)
+   {
+    let re=document.getElementsByClassName("fa-solid fa-circle")
+    if(re.length>0)
+    {
+      re[0].className="fa-regular fa-circle"
+    }
+  e.firstChild.className="fa-solid fa-circle"
+    document.getElementById("i1").src=arr[ind]
+    i=ind
+   } 
+  
+  
+   function fun3(){
+    let re= document.getElementsByClassName("fa-circle")
+    re[i].className="fa-regular fa-circle"
+    
+    i++
+     
+       if(i>=arr.length){
+         i=0
+       }
+      
+       console.log(i)
+       document.getElementById("i1").src=arr[i]
+       re[i].className="fa-solid fa-circle"
+  
+     }
+     
+  
+    setInterval(fun3,1500)
+       
+      </script>
+      <script>
+        var flag=0
+        function fun()
+        {
+          e=document.getElementById("navbar")
+          e1=document.getElementById("hello")
+          if(flag==0){
+            e.className="fa-solid fa-magnifying-glass"
+            e1.style.display="none"
+            flag=1
+          }
+          else{
+            e.className="fa-solid fa-xmark"
+            e1.style.display="block"
+            flag=0
+          }
+        }
+      </script>
+   <div class="submain3">
+    <div class="s1"><b>x80 series</b></div>
+    <div class="s2"><b>co-engineered with</b>
+        <img src="c7.jpg">
+    </div>
+    <div class="s3"><b>cinematography.Redefined.</b></div>
+    <div class="s4">Learn More
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </div>
+   </div>
+   <div class="submain4">
+    <div class="r1"><b>Discover</b></div>
+   </div>
+   <div class="submain5">
+    <div class="t1">
+        <div class="p1">v23 pro<br><b>Delight Every Moment</b></br></div>
+    </div>
+    <div class="t2">
+        <div class="p2">x8 pro<br><b>Cinematography.Redefined.</b></br></div>
+    </div>
+    <div class="t3">
+        <div class="p3">vivo TWS2 ANC<br><b>Studio Sound. Distraction</b></br><b>Free</b></div>
+    </div>
+    <div class="t4">
+        <div class="p4">Iq00 115G<br><b>sales Starts On 12th jan,13th</b></br><b>Pm</b></div>
+    </div>
+    <div class="t5">
+        <div class="p5">Y75 5G<br><b>It's My style</b></br></div>
+    </div>
+   </div>
+   <div class="submain6">
+    <div class="a1">Popular Links</div>
+    <div class="a2">Purchase online</div>
+    <div class="a3">Support</div>
+    <div class="a4">About vivo</div>
+    <div class="a5"><i class="fa-solid fa-message"></i> Chat with us</div>
+    <div class="a6">x8 pro</div>
+    <div class="a7">E store</div>
+    <div class="a8">FaQs</div>
+    <div class="a9">Info</div>
+    <div class="a0"><i class="fa-solid fa-envelope"></i><b> Email Us Reply In(24hrs)</b></div>
+    <div class="a11">x23 Pro</div>
+    <div class="a12">Buy phones</div>
+    <div class="a13">Service Center</div>
+    <div class="a14">India Impact Report</div>
+    <div class="a15"><i class="fa-solid fa-phone"></i>  24*7<br><b>1800-208-3388</b></br></div>
+    <div class="a16">Vivo TWS 2ANS</div>
+    <div class="a17">Buy Accesories</div>
+    <div class="a18">Function Os</div>
+    <div class="a19">New Center</div>
+    <div class="a20"><i class="fa-solid fa-phone"></i>  24*7<br><b>1800-102-3388</b></br></div>
+    <div class="a21">IQ00 115G</div>
+    <div class="a117">My Orders</div>
+    <div class="a118">Imei auntentication</div>
+    <div class="a119">E-Waste Management</div>
+    <div class="a22"><i class="fa-solid fa-phone"></i>  24*7<br><b>1800-208-4488</b></br></div>
+    <div class="a23">Y02</div>
+    <div class="a1117">Write To ceo</div>
+    <div class="a1118">System Update</div>
+    <div class="a1119">Terms And Conditions</div>
+    <div class="a24"><i class="fa-solid fa-circle-down"></i>follow us<br><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin"></i></br></div>
+   </div>
+</div>
+
+</body>
+</html>
